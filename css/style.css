@@ -4,7 +4,6 @@
 * {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 body {
   min-height: 100vh;
@@ -14,6 +13,9 @@ body {
   overflow: hidden;
   color: white;
   outline: none !important;
+}
+.overflowY{
+  overflow-y: hidden;
 }
 a {
   color: white;
@@ -296,15 +298,14 @@ button:hover {
 }
 .rules ul {
   text-align: left;
-  height: 35%;
+  height: 20%;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   flex-direction: column;
   list-style: none;
 }
-.trash {
-  height: 100%;
+.main-topic {
   width: 50%;
 }
 .prizes {
@@ -551,14 +552,14 @@ input:focus + .label{
 .loading{
   height: 100vh;
   width: 100vw;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #0f1021;
-  z-index: 10000;
+  z-index: 2000;
   flex-direction: column;
   letter-spacing: 3px;
   user-select: none;
@@ -588,4 +589,7 @@ input:focus + .label{
 #home .subheading{
   font-size: 18px;
   width: 50%;
+}
+.heading span{
+  font-size: 30px;
 }

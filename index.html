@@ -5,10 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Blogathon</title>
   </head>
   <body>
+    <div class="mobile flex">
+      <nav>
+        <ul class="flex spBtwn">
+          <li
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-delay="0"
+            data-aos-duration="500"
+          >
+            <a class="mob-links">Home</a>
+          </li>
+          <li
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-delay="100"
+            data-aos-duration="500"
+          >
+            <a class="mob-links">Timeline</a>
+          </li>
+          <li
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-delay="200"
+            data-aos-duration="500"
+          >
+            <a class="mob-links">Rules</a>
+          </li>
+          <li
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-delay="300"
+            data-aos-duration="500"
+          >
+            <a class="mob-links">Prizes</a>
+          </li>
+          <li
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-delay="400"
+            data-aos-duration="500"
+          >
+            <a class="mob-links">Sponsors</a>
+          </li>
+          <li
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-delay="500"
+            data-aos-duration="500"
+          >
+            <a class="mob-links">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <section class="loading">
       <div class="spinner-box">
         <div class="blue-orbit leo"></div>
@@ -25,14 +80,21 @@
 
     <header class="flex spBtwn">
       <div class="logo"><a href="#home">Hack Club SIGCE</a></div>
+      <div class="three col">
+        <div class="hamburger" id="hamburger-1">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </div>
       <nav>
         <ul class="flex spBtwn" data-aos="fade-down">
-          <li><a href="#home" class="nav-links">Home</a></li>
-          <li><a href="#timeline" class="nav-links">Timeline</a></li>
-          <li><a href="#rules" class="nav-links">Rules</a></li>
-          <li><a href="#prizes" class="nav-links">Prizes</a></li>
-          <li><a href="#sponsors" class="nav-links">Sponsors</a></li>
-          <li><a href="#contact" class="nav-links">Contact</a></li>
+          <li><a class="nav-links">Home</a></li>
+          <li><a class="nav-links">Timeline</a></li>
+          <li><a class="nav-links">Rules</a></li>
+          <li><a class="nav-links">Prizes</a></li>
+          <li><a class="nav-links">Sponsors</a></li>
+          <li><a class="nav-links">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -44,7 +106,7 @@
       ></iframe>
 
       <div class="section">
-        <h1 class="heading">Blogathon - Write what you feel !</h1>
+        <h1 class="heading"><p>Blogathon</p> <span> - Write what you feel !</span></h1>
         <h3 class="subheading">
           An exclusive platform particularly designed for Creative Blogs, which
           helps in uplifting the talent of content creators.
@@ -70,7 +132,11 @@
           data-aos-delay="200"
           data-aos-duration="500"
         >
-          <h2 data-aos="zoom-in-left" data-aos-delay="450" data-aos-duration="400">
+          <h2
+            data-aos="zoom-in-left"
+            data-aos-delay="450"
+            data-aos-duration="400"
+          >
             13th Jan
           </h2>
           <div class="item-content flex">
@@ -88,11 +154,18 @@
           data-aos-delay="200"
           data-aos-duration="500"
         >
-          <h2 data-aos="zoom-in-left" data-aos-delay="450" data-aos-duration="400">
+          <h2
+            data-aos="zoom-in-left"
+            data-aos-delay="450"
+            data-aos-duration="400"
+          >
             14th Jan
           </h2>
           <div class="item-content flex">
-            <p>- Access will be provided to the participants to submit the Blogs on 14th of Jan from _ pm.</p>
+            <p>
+              - Access will be provided to the participants to submit the Blogs
+              on 14th of Jan from _ pm.
+            </p>
           </div>
         </div>
         <div
@@ -102,11 +175,18 @@
           data-aos-delay="200"
           data-aos-duration="500"
         >
-          <h2 data-aos="zoom-in-left" data-aos-delay="450" data-aos-duration="400">
+          <h2
+            data-aos="zoom-in-left"
+            data-aos-delay="450"
+            data-aos-duration="400"
+          >
             16th Jan
           </h2>
           <div class="item-content flex">
-            <p>- Closing date for the submission of the Blogs on the dedicated Blogathon's website.</p>
+            <p>
+              - Closing date for the submission of the Blogs on the dedicated
+              Blogathon's website.
+            </p>
           </div>
         </div>
         <div
@@ -116,11 +196,18 @@
           data-aos-delay="200"
           data-aos-duration="500"
         >
-          <h2 data-aos="zoom-in-left" data-aos-delay="450" data-aos-duration="400">
+          <h2
+            data-aos="zoom-in-left"
+            data-aos-delay="450"
+            data-aos-duration="400"
+          >
             19th Jan
           </h2>
           <div class="item-content flex">
-            <p>- Announcement of the Results after assessment done by the respective judges.</p>
+            <p>
+              - Announcement of the Results after assessment done by the
+              respective judges.
+            </p>
           </div>
         </div>
       </div>
@@ -130,7 +217,20 @@
     <section class="rules sectionHeight text-center" id="rules">
       <h1 class="heading">Rules For Contest</h1>
       <div class="main-rules">
-        <div class="trash"></div>
+        <div class="main-topic">
+          <ul class="topics">
+            <li>Web Development</li>
+            <li>Programming Language</li>
+            <li>Stocks</li>
+            <li>Blockchain</li>
+            <li>UI - UX</li>
+            <li>Data analysis</li>
+            <li>AI - ML</li>
+            <li>Photoshop</li>
+            <li>Metaverse</li>
+            <li>Cyber security</li>
+          </ul>
+        </div>
         <ul>
           <li>
             <span><i class="bi bi-check-lg"></i></span>_% Plagiarism check of
@@ -191,7 +291,7 @@
       </a>
     </section>
     <section id="contact" class="text-center contact sectionHeight">
-      <h2 class="zoom-in-left">Reach Out</h2>
+      <h2 class="heading">Sponsor Us</h2>
       <form autocomplete="off">
         <div class="input">
           <div class="label">

@@ -1,7 +1,7 @@
 document.querySelectorAll('.nav-links').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
         e.preventDefault();
-        document.querySelector(anchor.getAttribute('href')).scrollIntoView({
+        document.querySelector(`#${anchor.innerHTML.toLowerCase()}`).scrollIntoView({
             behavior: 'smooth'
         });
     })
@@ -14,3 +14,21 @@ setTimeout(() => {
 setTimeout(() => {
     document.querySelector(".loading").style.display = "none";
 }, 3700);
+
+let hamburger = document.querySelector('.hamburger');
+let mobile = document.querySelector(".mobile");
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle("is-active");
+    mobile.classList.toggle('hamburgerMenu');
+    document.querySelector("body").classList.toggle('overflowY')
+})
+document.querySelectorAll('.mob-links').forEach(anchor => {
+    anchor.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelector(`#${anchor.innerHTML.toLowerCase()}`).scrollIntoView({
+            behavior: 'smooth'
+        });
+        hamburger.click();
+    })
+})
