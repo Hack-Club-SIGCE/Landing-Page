@@ -158,6 +158,8 @@ nav ul li {
   -webkit-text-fill-color: transparent;
   text-transform: capitalize;
   user-select: none;
+  display: flex;
+  justify-content: center;
 }
 .sectionHeight {
   min-height: 100vh;
@@ -277,7 +279,7 @@ button:hover {
   width: 100%;
   position: absolute;
   right: 0;
-  top: 215%;
+  top: 217%;
   user-select: none;
   z-index: 1;
   overflow: hidden;
@@ -294,18 +296,19 @@ button:hover {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 .rules ul {
   text-align: left;
-  height: 20%;
+  height: 35%;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   flex-direction: column;
   list-style: none;
+  z-index: 1000;
 }
-.main-topic {
+.trash {
   width: 50%;
 }
 .prizes {
@@ -585,11 +588,10 @@ input:focus + .label{
 .shutLoading{
   opacity: 0;
 }
-
+#home .heading{
+  justify-content: flex-start;
+}
 #home .subheading{
   font-size: 18px;
   width: 50%;
-}
-.heading span{
-  font-size: 30px;
 }
