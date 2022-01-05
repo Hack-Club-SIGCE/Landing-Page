@@ -5,26 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Blogathon</title>
   </head>
   <body>
-    <section class="backgrounds">
-      <div class="circle1"></div>
-      <div class="circle2"></div>
-      <div class="circle3"></div>
-      <div class="circle4"></div>
-      <div class="glow"></div>
+    <section class="loading">
+      <div class="spinner-box">
+        <div class="blue-orbit leo"></div>
+
+        <div class="green-orbit leo"></div>
+
+        <div class="red-orbit leo"></div>
+
+        <div class="white-orbit leo"></div>
+        <div class="dot leo"></div>
+      </div>
+      <p>Loading <span>...</span></p>
     </section>
+
     <header class="flex spBtwn">
-      <div class="logo"><a href="#home">Blogathon</a></div>
+      <div class="logo"><a href="#home">Hack Club SIGCE</a></div>
       <nav>
-        <ul class="flex spBtwn">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#rules">Rules</a></li>
-          <li><a href="#prizes">Prizes</a></li>
-          <li>Sponsors</li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="flex spBtwn" data-aos="fade-down">
+          <li><a href="#home" class="nav-links">Home</a></li>
+          <li><a href="#timeline" class="nav-links">Timeline</a></li>
+          <li><a href="#rules" class="nav-links">Rules</a></li>
+          <li><a href="#prizes" class="nav-links">Prizes</a></li>
+          <li><a href="#sponsors" class="nav-links">Sponsors</a></li>
+          <li><a href="#contact" class="nav-links">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -36,37 +44,84 @@
       ></iframe>
 
       <div class="section">
-        <h1 class="heading">Blogathon - Kanda lassun</h1>
+        <h1 class="heading">Blogathon - Write what you feel !</h1>
         <h3 class="subheading">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
-          veritatis veniam aliquam libero aspernatur nulla totam rem ratione
-          facere? Ut autem numquam doloremque.
+          An exclusive platform particularly designed for Creative Blogs, which
+          helps in uplifting the talent of content creators.
+        </h3>
+        <h3 class="subheading" style="margin-top: 20px">
+          - A perfect place to showcase the skills by penning down the ideas, in
+          your own own words & to take cognizance on different outlooks.
         </h3>
       </div>
     </section>
-    <section class="about text-center sectionHeight" id="about">
-      <h1 class="heading">About The Contest</h1>
+    <section class="about text-center sectionHeight" id="timeline">
+      <h1 class="heading">The Plan of action</h1>
       <div class="subheading">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
         explicabo ex! Esse corporis praesentium molestias laboriosam iure. Nemo,
         ab ratione.
       </div>
       <div class="content flex spBtwn">
-        <div class="items">
-          <h2>Fast</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        <div
+          class="items"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-delay="200"
+          data-aos-duration="500"
+        >
+          <h2 data-aos="zoom-in-left" data-aos-delay="450" data-aos-duration="400">
+            13th Jan
+          </h2>
+          <div class="item-content flex">
+            <p>- Commencement of the event with a detailed Introduction.</p>
+            <p>
+              - Instructions and the roadmap will be explained to all the
+              participants of the Blogathon.
+            </p>
+          </div>
         </div>
-        <div class="items">
-          <h2>Privacy</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        <div
+          class="items"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-delay="200"
+          data-aos-duration="500"
+        >
+          <h2 data-aos="zoom-in-left" data-aos-delay="450" data-aos-duration="400">
+            14th Jan
+          </h2>
+          <div class="item-content flex">
+            <p>- Access will be provided to the participants to submit the Blogs on 14th of Jan from _ pm.</p>
+          </div>
         </div>
-        <div class="items">
-          <h2>Large</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        <div
+          class="items"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-delay="200"
+          data-aos-duration="500"
+        >
+          <h2 data-aos="zoom-in-left" data-aos-delay="450" data-aos-duration="400">
+            16th Jan
+          </h2>
+          <div class="item-content flex">
+            <p>- Closing date for the submission of the Blogs on the dedicated Blogathon's website.</p>
+          </div>
         </div>
-        <div class="items">
-          <h2>Structured</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        <div
+          class="items"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-delay="200"
+          data-aos-duration="500"
+        >
+          <h2 data-aos="zoom-in-left" data-aos-delay="450" data-aos-duration="400">
+            19th Jan
+          </h2>
+          <div class="item-content flex">
+            <p>- Announcement of the Results after assessment done by the respective judges.</p>
+          </div>
         </div>
       </div>
       <p class="shareSent">Share Your Blogs Now!</p>
@@ -77,16 +132,17 @@
       <div class="main-rules">
         <div class="trash"></div>
         <ul>
-          <li class="heading">Following Are the rules</li>
           <li>
-            <span><i class="bi bi-check-lg"></i></span> 0% Plagiarism
+            <span><i class="bi bi-check-lg"></i></span>_% Plagiarism check of
+            the concerned Blog.
           </li>
           <li>
-            <span><i class="bi bi-check-lg"></i></span> No controversial topic
+            <span><i class="bi bi-check-lg"></i></span>Controversial topics &
+            comments forbidden.
           </li>
           <li>
-            <span><i class="bi bi-check-lg"></i></span> Stick to the topics we
-            gave
+            <span><i class="bi bi-check-lg"></i></span>Can opt only among the
+            specified topics stated before hand.
           </li>
         </ul>
       </div>
@@ -95,22 +151,47 @@
       <h1 class="heading">Prizes For Contest</h1>
       <h3>Participate and win exciting Prizes</h3>
       <div class="content flex spBtwn">
-        <div class="items">
+        <div
+          class="items"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-delay="200"
+          data-aos-duration="500"
+        >
           <h2>1<sup>st</sup> Prize</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
         </div>
-        <div class="items">
+        <div
+          class="items"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-delay="200"
+          data-aos-duration="500"
+        >
           <h2>2<sup>nd</sup> Prize</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
         </div>
-        <div class="items">
+        <div
+          class="items"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-delay="200"
+          data-aos-duration="500"
+        >
           <h2>3<sup>rd</sup> Prize</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
         </div>
       </div>
     </section>
-    <section id="contact" class="sectionHeight text-center contact">
-      <h2 class="heading">Contact Us</h2>
+    <section class="sponsors sectionHeight text-center" id="sponsors">
+      <h1 class="heading">Sponsors</h1>
+      <a target="_blank" href="https://www.TechCrackBlog.com/">
+        <img src="/img/sponsors/Blogathon/logo.png" alt="Tech Crack Blog" />
+        <p>Tech Crack Blog</p>
+      </a>
+    </section>
+    <section id="contact" class="text-center contact sectionHeight">
+      <h2 class="zoom-in-left>Reach Out</h2>
       <!-- <iframe src="/green_character/index.html" id="green" frameborder="0"></iframe> -->
       <form autocomplete="off">
         <div class="input">
@@ -203,5 +284,9 @@
       </form>
     </section>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
