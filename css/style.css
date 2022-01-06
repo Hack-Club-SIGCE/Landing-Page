@@ -10,7 +10,7 @@ body {
   width: 100%;
   background-color: #0f1021;
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
   color: white;
   outline: none !important;
 }
@@ -170,8 +170,9 @@ nav ul li {
 .subheading {
   width: 42%;
   z-index: 1;
-  margin-top: 40px;
-  font-size: 15px;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 17px;
   color: rgb(209, 209, 209);
   font-weight: 400;
 }
@@ -212,6 +213,11 @@ button:hover {
   padding: 0 30px;
   margin: 0 auto;
 }
+#prizes .content {
+  width: 90vw;
+  padding: 0 30px;
+  margin: 0 auto;
+}
 .items::before {
   content: "";
   height: 200px;
@@ -226,6 +232,30 @@ button:hover {
   background-color: #c314c3c0;
   opacity: 0.4;
 }
+.prize-items::before {
+  content: "";
+  height: 175px;
+  width: 60vw;
+  border-radius: 35px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -10 !important;
+  filter: blur(100px);
+  transform: scale(0.5);
+  background-color: rgba(195, 20, 195, 0.479);
+  opacity: 0.4;
+}
+.prize-content{
+  height: 121px;
+}
+.prize-items p{
+  width: 60vw;
+  text-align: center;
+  margin: 15px 30px;
+  font-size: 17px;
+  color:  rgba(255, 255, 255, 0.712);
+}
 .shareSent {
   font-size: 28px;
   font-weight: 600;
@@ -233,8 +263,8 @@ button:hover {
   margin-top: 4%;
 }
 .items {
-  height: 200px;
-  width: 200px;
+  height: 230px;
+  width: 230px;
   border-radius: 35px;
   background: linear-gradient(
     rgba(255, 255, 255, 0.08),
@@ -254,12 +284,35 @@ button:hover {
   align-items: center;
   flex-direction: column;
 }
+.prize-items{
+  height: 175px;
+  width: 60vw;
+  border-radius: 35px;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.01)
+  );
+  backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  z-index: 10;
+  font-family: "Nunito", sans-serif;
+  text-align: left;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 35px;
+  transition: 0.7s ease;
+  cursor: default;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
 .item-content{
   height: 100%;
   flex-direction: column;
 }
 .items p {
-  font-size: 14px;
+  font-size: 15px;
   color: rgba(255, 255, 255, 0.616);
   margin-top: 10px;
 }
@@ -267,6 +320,10 @@ button:hover {
   margin-top: 20px;
 }
 .items:hover{
+  border: 1px solid rgba(238, 130, 238, 0.473);
+  transform: scale(1.06);
+}
+.prize-items:hover{
   border: 1px solid rgba(238, 130, 238, 0.473);
   transform: scale(1.06);
 }
@@ -300,7 +357,8 @@ button:hover {
 }
 .rules ul {
   text-align: left;
-  height: 35%;
+  height: 50%;
+  width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -442,12 +500,26 @@ input:focus + .label{
   height: 100%;
   width: 100%;
 }
+.sponsor{
+  margin-bottom: 60px;
+}
+.sponsor:last-child{
+  margin-bottom: 30px;
+}
 .sponsors{
   background: linear-gradient(-90deg, rgba(255, 255, 255, 0.01), transparent);
   padding: 80px 0;
 }
+.sponsors .heading{
+  margin-bottom: 30px;
+}
 .sponsors a img{
-  height: 100px;
+  height: 90px;
+}
+.sponsors-info{
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 
@@ -567,6 +639,7 @@ input:focus + .label{
   letter-spacing: 3px;
   user-select: none;
   transition: 0.7s ease;
+  display: none;
 }
 .loading p span{
   animation: dotLoading infinite 1s;
@@ -594,4 +667,54 @@ input:focus + .label{
 #home .subheading{
   font-size: 18px;
   width: 50%;
+  margin: 30px 0;
+}
+footer{
+  padding: 30px;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .parent{
+  height: 100%;
+  width: 100%;
+}
+.footer-child{
+  height: 220px;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+.footer-child h2{
+  text-align: center;
+  width: 100%;
+}
+.footer-content{
+  height: 175px;
+  margin-top: 10px;
+}
+footer ul li{
+  margin-top: 10px;
+  text-align: center;
+  list-style: none;
+}
+footer .socials li{
+  margin: 15px auto;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  width: 200px;
+  text-align: left;
+}
+.socials a{
+  /* margin: auto; */
+}
+.socials li i{
+  margin-right: 20px;
+  width: 30px;
+  display: inline;
 }
