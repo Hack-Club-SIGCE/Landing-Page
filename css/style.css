@@ -639,7 +639,6 @@ input:focus + .label{
   letter-spacing: 3px;
   user-select: none;
   transition: 0.7s ease;
-  display: none;
 }
 .loading p span{
   animation: dotLoading infinite 1s;
